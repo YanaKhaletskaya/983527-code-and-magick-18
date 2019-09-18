@@ -180,31 +180,19 @@
     <p class="setup-similar-label">Петр Петров</p>
   </div>
 </template>
-
 <script>
-  var fireballSize=22;
-  var wizardSpeed=3;
-  var wizardWidth=70;
-  var wizardHeight;
-  var width;
-  var height;
-var getFireballSpeed=function(left){
-  if (left===true){
+var fireballSize = 22;
+var getFireballSpeed = function(left) {
+  if (left === true){
     return 5;
+  } else {
+    return 2;
   }
-  else {return 2;}
 }
-var getWizardHeight=function(wizardHeight){
+var wizardSpeed = 3;
+var wizardWidth = 70;
+var getWizardHeight = function(wizardHeight) {
   return 1.337*wizardWidth;
-<<<<<<< Updated upstream
-  }
-  var getWizardX=function (width){
-    return width/2;
-  }
-  var getWizardY=function(height){
-    return height/3;
-  }
-=======
 }
 var getWizardX = function(width) {
   return (width-wizardWidth) / 2;
@@ -212,9 +200,7 @@ var getWizardX = function(width) {
 var getWizardY = function(height) {
   return height/3;
 }
->>>>>>> Stashed changes
 </script>
-
 <script src="js/game.js"></script>
 
 </body>
